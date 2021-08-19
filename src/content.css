@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('NetflixSans.woff2');
+}
+body, html {
+  font-size: .75vw;
+  -webkit-font-smoothing: antialiased;
+}
+.ReportAProblemDialog--focus-trap {
+  z-index: 9999!important;
+}
+.jumpscare-ahead {
+  opacity: 1!important;
+  pointer-events: all!important;
+}
+#jumpscare-overview p {
+  line-height: 180%;
+  color: #FFF;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 16px;
+}
+#p-container {
+  max-height: 500px;
+  overflow-y: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#movie-select-popup, #jumpscare-overview {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  height: min-content;
+  pointer-events: none;
+}
+#jumpscare-popup, #movie-select-popup, #jumpscare-overview {
+  z-index: 99!important;
+  width: 420px;
+  background-color: #141414;
+  box-sizing: border-box;
+  border: 2px solid #404040;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #FFF;
+  box-shadow: 0 -4px #bf1315;
+  border-top: none!important;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  padding: 15px;
+  opacity: 0;
+  transition: all .2s cubic-bezier(.05,.03,.35,1);
+}
+#jumpscare-close {
+  background: transparent;
+  border: 0px;
+  outline: 0px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+#jumpscare-close svg {
+  fill: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100%;
+}
+#jumpscare-close:hover svg {
+  cursor: pointer;
+  fill: #FFF!important;
+}
+#jumpscare-popup h3, #movie-select-popup h3, #jumpscare-overview h3 {
+  font-size: 20px!important;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#jumpscare-popup h4, #movie-select-popup h4, #jumpscare-overview h4 {
+  font-size: 16px!important;
+  color: #b3b3b3!important;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+}
+#jumpscare-popup h5 {
+  font-size: 30px;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#jumpscare-options button svg, #jumpscare-details svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+#jumpscare-options button, #jumpscare-details {
+  text-decoration: none;
+  font-size: 16px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  border: 0px;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: bold;
+}
+#jumpscare-skip, #movie-select, #play-movie {
+  background-color: #FFF;
+  color: #000;
+}
+#jumpscare-skip:hover, #movie-select:hover, #play-movie:hover {
+  background-color: rgba(255,255,255,0.75);
+}
+#jumpscare-dismiss, #jumpscare-details {
+  background-color: rgba(109,109,110,0.7);
+  color: #FFF;
+}
+#jumpscare-dismiss:hover, #jumpscare-details:hover {
+  background-color: rgba(109,109,110,0.4);
+}
+#jumpscare-mute {
+  float: right;
+  opacity: .5;
+  background: transparent;
+  cursor: pointer;
+  padding: 0px!important;
+  margin-top: 3px;
+  position: relative;
+  margin-right: 0px!important;
+}
+#jumpscare-mute img {
+  width: 40px;
+  height: 40px;
+}
+#jumpscare-mute:hover {
+  opacity: 1!important;
+  transition: all .2s cubic-bezier(.05,.03,.35,1);
+}
+.jumpscare-muted {
+  opacity: 1!important;
+}
+#jumpscare-tooltip {
+  display: inline-block;
+  background-color: #FFF;
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  position: absolute;
+  opacity: 0;
+  white-space: nowrap;
+  margin-top: -60px;
+  pointer-events: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  right: 0px;
+  width: fit-content;
+  transform: translateX(-50%);
+}
+#jumpscare-tooltip:after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #FFF transparent transparent transparent;
+}
+#jumpscare-mute:hover #jumpscare-tooltip {
+  opacity: 1!important;
+}
+/* Movie select */
+#radio-section {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* Custom radio button */
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #262626;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #3E3D3D;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #AE2A22;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 5px;
+  left: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}

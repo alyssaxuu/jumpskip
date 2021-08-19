@@ -1,0 +1,78 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="content.css">
+</head>
+<body>
+  <div id="jumpscare-overview">
+    <h3>This movie contains 6 jumpscares</h3>
+    <h4>Here's an overview:</h4>
+    <div id="p-container">
+      <p></p>
+    </div>
+    <div id="jumpscare-options">
+      <button id="play-movie">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0L15.6956 7.84779L0 15.6956V0Z" fill="black"/>
+        </svg>
+        Play movie
+      </button>
+      <a id="jumpscare-details" target="-blank">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.05933 4.65539C4.05933 2.08429 6.57989 0 9.68915 0C12.7984 0 15.319 2.08429 15.319 4.65539V7.84066C15.319 9.77425 15.8634 11.6813 16.9091 13.4107L18.4302 15.9264C18.7154 16.3981 18.1895 16.926 17.575 16.7849C15.7024 16.3547 13.3867 16.9073 11.3655 17.5583C10.2744 17.9097 9.10395 17.9097 8.01277 17.5583C5.9916 16.9073 3.67587 16.3547 1.80331 16.7849C1.18881 16.926 0.662884 16.3981 0.948103 15.9264L2.46918 13.4107C3.51491 11.6813 4.05933 9.77425 4.05933 7.84066V4.65539Z" fill="white"/>
+          <path d="M3.23657 6.51549L4.29875 7.10559V11.0259L3.92768 10.6961C2.71607 9.61909 1.72109 8.3208 0.996115 6.87086L0.816631 6.51189C0.531829 5.94229 0.434813 5.2971 0.539508 4.66893C0.587941 4.37833 0.843522 4.16534 1.13813 4.16534C1.41137 4.16534 1.65632 4.35014 1.73139 4.61288C1.96139 5.41788 2.50471 6.10891 3.23657 6.51549Z" fill="white"/>
+          <path d="M16.1418 6.51549L15.0797 7.10559V11.0259L15.4507 10.6961C16.6624 9.61909 17.6573 8.3208 18.3823 6.87086L18.5618 6.51189C18.8466 5.94229 18.9436 5.2971 18.8389 4.66893C18.7905 4.37833 18.5349 4.16534 18.2403 4.16534C17.967 4.16534 17.7221 4.35014 17.647 4.61288C17.417 5.41788 16.8737 6.10891 16.1418 6.51549Z" fill="white"/>
+          </svg>
+          Jumpscare details
+      </a>
+    </div>
+  </div>
+  <div id="movie-select-popup">
+    <h3>Multiple movies with the same name</h3>
+    <h4>Choose the right movie:</h4>
+    <div id="radio-section">
+    </div>
+    <div id="jumpscare-options">
+      <button id="movie-select">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0L15.6956 7.84779L0 15.6956V0Z" fill="black"/>
+        </svg>
+        Select movie & play
+      </button>
+    </div>
+  </div>
+  <div id="jumpscare-popup">
+    <button id="jumpscare-close">
+      <svg viewBox="0 0 18 18">
+        <path d="M7.53821454,9 L0,1.46178546 L1.46178546,0 L9,7.53821454 L16.5382145,0 L18,1.46178546 L10.4617855,9 L18,16.5382145 L16.5382145,18 L9,10.4617855 L1.46178546,18 L0,16.5382145 L7.53821454,9 Z"></path>
+      </svg>
+    </button>
+    <h3>Minor jumpscare warning</h3>
+    <h4>Coming up in:</h4>
+    <h5>00:00:10</h5>
+    <div id="jumpscare-options">
+      <button id="jumpscare-skip">
+        <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.10352e-05 0.669556L15.6956 8.51734L6.10352e-05 16.3651V0.669556Z" fill="black"/>
+          <rect x="16.3566" y="0.669556" width="2.64347" height="15.8608" fill="black"/>
+        </svg>
+        Skip ahead
+      </button>
+      <button id="jumpscare-dismiss">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 1L1 13" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M1 1L13 13" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+        Dismiss
+      </button>
+      <button id="jumpscare-mute">
+        <img src="./assets/mute.svg">
+        <div id="jumpscare-tooltip">
+          Mute jumpscare
+        </div>
+      </button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

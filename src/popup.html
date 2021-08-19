@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <button id="help">
+      <img src="assets/help.svg">
+    </button>
+    <div id="help-popup">
+      <p id="github">GitHub</p>
+      <p id="contribute">Contribute data</p>
+      <p id="review">Review Jumpskip</p>
+    </div>
+    <img src="assets/logo.svg" id="logo">
+    <div id="title">
+      <h1>Jumpskip</h1>
+    </div>
+    <div id="actions">
+      <button id="watch"><img src="assets/watch.svg">Watch a movie</button>
+      <button id="problem"><img src="assets/problem.svg">Having issues?</button>
+    </div>
+    <div id="problem-section" class="problem-off">
+      <label>What's happening?</label>
+      <img id="close-problem" src="assets/close.svg">
+      <p id="wrong">Inaccurate or missing jumpscares<img src="assets/arrow-right.svg"></p>
+    </div>
+    <hr>
+    <div class="container">
+      <label class="checkbox-container" id="warning-check">Show jumpscare warning
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <div id="warning-options" class="options">
+        <span><div id="warning-dropdown" class="dropdown">10 seconds<img src="assets/droparrow.svg"></div> before the jumpscare</span>
+        <div class="dropdown-options" id="warning-options-list">
+          <div class="dropdown-item" data-value="1">1 second</div>
+          <div class="dropdown-item" data-value="5">5 seconds</div>
+          <div class="dropdown-item" data-value="10">10 seconds</div>
+          <div class="dropdown-item" data-value="30">30 seconds</div>
+        </div>
+      </div>
+      <label class="checkbox-container" id="skip-check">Automatically skip all jumpscares
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <div id="skip-options" class="options">
+        <span><div id="skip-start-dropdown" class="dropdown">10 seconds<img src="assets/droparrow.svg"></div> before the jumpscare</span>
+        <div class="dropdown-options" id="skip-options-start">
+          <div class="dropdown-item" data-value="1">1 second</div>
+          <div class="dropdown-item" data-value="5">5 seconds</div>
+          <div class="dropdown-item" data-value="10">10 seconds</div>
+          <div class="dropdown-item" data-value="30">30 seconds</div>
+        </div>
+        <span><div id="skip-end-dropdown" class="dropdown">10 seconds<img src="assets/droparrow.svg"></div> after the jumpscare</span>
+        <div class="dropdown-options" id="skip-options-end">
+          <div class="dropdown-item" data-value="1">1 second</div>
+          <div class="dropdown-item" data-value="5">5 seconds</div>
+          <div class="dropdown-item" data-value="10">10 seconds</div>
+          <div class="dropdown-item" data-value="30">30 seconds</div>
+        </div>
+      </div>
+      <label class="checkbox-container" id="mute">Automatically mute all jumpscares
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    <div id="footer">
+      <hr>
+      <p>Made with &#128123; by <span>Alyssa X</span></p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

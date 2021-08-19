@@ -1,0 +1,128 @@
+1
+00:02:17,000 --> 00:02:22,000
+Upcoming jump scare (Minor)
+
+2
+00:02:41,000 --> 00:02:46,000
+Upcoming jump scare (Minor)
+
+3
+00:05:04,000 --> 00:05:09,000
+Upcoming jump scare (Minor)
+
+4
+00:08:35,000 --> 00:08:40,000
+Upcoming jump scare (Major)
+
+5
+00:11:47,000 --> 00:11:52,000
+Upcoming jump scare (Minor)
+
+6
+00:12:23,000 --> 00:12:28,000
+Upcoming jump scare (Minor)
+
+7
+00:16:44,000 --> 00:16:49,000
+Upcoming jump scare (Minor)
+
+8
+00:17:31,000 --> 00:17:36,000
+Upcoming jump scare (Minor)
+
+9
+00:20:57,000 --> 00:21:02,000
+Upcoming jump scare (Major)
+
+10
+00:29:01,000 --> 00:29:06,000
+Upcoming jump scare (Minor)
+
+11
+00:31:25,000 --> 00:31:30,000
+Upcoming jump scare (Minor)
+
+12
+00:35:07,000 --> 00:35:12,000
+Upcoming jump scare (Minor)
+
+13
+00:35:37,000 --> 00:35:42,000
+Upcoming jump scare (Minor)
+
+14
+00:37:43,000 --> 00:37:48,000
+Upcoming jump scare (Major)
+
+15
+00:45:53,000 --> 00:45:58,000
+Upcoming jump scare (Minor)
+
+16
+00:49:51,000 --> 00:49:56,000
+Upcoming jump scare (Minor)
+
+17
+00:51:47,000 --> 00:51:52,000
+Upcoming jump scare (Minor)
+
+18
+00:52:50,000 --> 00:52:55,000
+Upcoming jump scare (Major)
+
+19
+00:54:33,000 --> 00:54:38,000
+Upcoming jump scare (Minor)
+
+20
+00:55:07,000 --> 00:55:12,000
+Upcoming jump scare (Major)
+
+21
+00:58:23,000 --> 00:58:28,000
+Upcoming jump scare (Minor)
+
+22
+00:58:50,000 --> 00:58:55,000
+Upcoming jump scare (Minor)
+
+23
+01:03:45,000 --> 01:03:50,000
+Upcoming jump scare (Minor)
+
+24
+01:10:20,000 --> 01:10:25,000
+Upcoming jump scare (Minor)
+
+25
+01:12:21,000 --> 01:12:26,000
+Upcoming jump scare (Major)
+
+26
+01:12:42,000 --> 01:12:47,000
+Upcoming jump scare (Minor)
+
+27
+01:14:13,000 --> 01:14:18,000
+Upcoming jump scare (Minor)
+
+28
+01:16:28,000 --> 01:16:33,000
+Upcoming jump scare (Minor)
+
+29
+01:21:51,000 --> 01:21:56,000
+Upcoming jump scare (Minor)
+
+30
+01:22:15,000 --> 01:22:20,000
+Upcoming jump scare (Minor)
+
+31
+01:25:14,000 --> 01:25:19,000
+Upcoming jump scare (Minor)
+
+32
+01:30:05,000 --> 01:30:10,000
+Upcoming jump scare (Minor)
+
