@@ -5,6 +5,8 @@ Skip jumpscares on Netflix 👻
 
 Jumpskip is a Chrome Extension that helps you watch movies on Netflix without being spooked by jumpscares.
 
+<a href="https://www.producthunt.com/posts/jumpskip-for-netflix?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-jumpskip-for-netflix" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=309216&theme=light" alt="Jumpskip for Netflix - Watch Netflix without being scared by jumpscares | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 Made by [Alyssa X](https://alyssax.com)
 
 ## Table of contents
