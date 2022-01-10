@@ -25,7 +25,7 @@ Made by [Alyssa X](https://alyssax.com)
 🍿 Quick access to Netflix<br>
 ⏯️ Play and pause movies through the extension
 
-## Resources used
+## Libraries used
 
 - [jQuery](https://jquery.com/) -  for better event handling and DOM manipulation
 - [Wheresthejump](https://wheresthejump.com/) -  for the jumpscare data
