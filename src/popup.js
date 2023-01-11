@@ -12,17 +12,17 @@ $(document).ready(function(){
       if (result.mute) {
         $("#mute input").attr("checked", true);
       }
-      if (result.warningtime == 1) {
+      if (result.warningtime === 1) {
         $("#warning-dropdown").html('1 second <img src="assets/droparrow.svg">');
       } else {
         $("#warning-dropdown").html(result.warningtime+' seconds <img src="assets/droparrow.svg">');
       }
-      if (result.skipbefore == 1) {
+      if (result.skipbefore === 1) {
         $("#skip-start-dropdown").html('1 second <img src="assets/droparrow.svg">');
       } else {
         $("#skip-start-dropdown").html(result.skipbefore+' seconds <img src="assets/droparrow.svg">');
       }
-      if (result.skipafter == 1) {
+      if (result.skipafter === 1) {
         $("#skip-end-dropdown").html('1 second <img src="assets/droparrow.svg">');
       } else {
         $("#skip-end-dropdown").html(result.skipafter+' seconds <img src="assets/droparrow.svg">');
@@ -104,7 +104,7 @@ $(document).ready(function(){
   }
 
   function changeOption() {
-    if ($(this).parent().attr("id") == "warning-check") {
+    if ($(this).parent().attr("id") === "warning-check") {
       if ($(this).is(":checked")) {
         chrome.storage.sync.set({warning: true});
         $("#warning-options").addClass("show-options");
@@ -112,7 +112,7 @@ $(document).ready(function(){
         chrome.storage.sync.set({warning: false});
         $("#warning-options").removeClass("show-options");
       }
-    } else if ($(this).parent().attr("id") == "skip-check") {
+    } else if ($(this).parent().attr("id") === "skip-check") {
       if ($(this).is(":checked")) {
         chrome.storage.sync.set({skip: true});
         $("#skip-options").addClass("show-options");
@@ -120,7 +120,7 @@ $(document).ready(function(){
         chrome.storage.sync.set({skip: false});
         $("#skip-options").removeClass("show-options");
       }
-    } else if ($(this).parent().attr("id") == "mute") {
+    } else if ($(this).parent().attr("id") === "mute") {
       if ($(this).is(":checked")) {
         chrome.storage.sync.set({mute: true});
       } else {
@@ -133,11 +133,11 @@ $(document).ready(function(){
   function toggleDropdown(e) {
     e.preventDefault();
     e.stopPropagation();
-    if ($(this).attr("id") == "warning-dropdown") {
+    if ($(this).attr("id") === "warning-dropdown") {
       $("#warning-options-list").toggleClass("dropdown-active");
-    } else if ($(this).attr("id") == "skip-start-dropdown") {
+    } else if ($(this).attr("id") === "skip-start-dropdown") {
       $("#skip-options-start").toggleClass("dropdown-active");
-    } else if ($(this).attr("id") == "skip-end-dropdown") {
+    } else if ($(this).attr("id") === "skip-end-dropdown") {
       $("#skip-options-end").toggleClass("dropdown-active");
     }
   }
@@ -145,13 +145,13 @@ $(document).ready(function(){
   function setDropdownItem(e) {
     e.preventDefault();
     e.stopPropagation();
-    if ($(this).parent().attr("id") == "warning-options-list") {
+    if ($(this).parent().attr("id") === "warning-options-list") {
       $("#warning-dropdown").html($(this).html()+'<img src="assets/droparrow.svg">');
       chrome.storage.sync.set({warningtime: parseInt($(this).attr("data-value"))});
-    } else if ($(this).parent().attr("id") == "skip-options-start") {
+    } else if ($(this).parent().attr("id") === "skip-options-start") {
       $("#skip-start-dropdown").html($(this).html()+'<img src="assets/droparrow.svg">');
       chrome.storage.sync.set({skipbefore: parseInt($(this).attr("data-value"))});
-    } else if ($(this).parent().attr("id") == "skip-options-end") {
+    } else if ($(this).parent().attr("id") === "skip-options-end") {
       $("#skip-end-dropdown").html($(this).html()+'<img src="assets/droparrow.svg">');
       chrome.storage.sync.set({skipafter: parseInt($(this).attr("data-value"))});
     }
@@ -165,7 +165,7 @@ $(document).ready(function(){
   }
 
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.type == "change-playing-status") {
+    if (request.type === "change-playing-status") {
       if (!request.playing) {
         $("#watch").html("<img src='assets/watch.svg'>Resume movie");
       } else {

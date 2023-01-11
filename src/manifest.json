@@ -2,18 +2,17 @@
   "name": "Jumpskip - Skip Jumpscares on Netflix",
   "description": "Skip, mute, or get an alert when a jumpscare is about to happen",
   "offline_enabled": true,
-  "version": "1.0.0",
-  "manifest_version": 2,
+  "version": "1.0.1",
+  "manifest_version": 3,
   "background": {
-    "scripts": ["jquery.js", "background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "icons": {
     "16": "assets/icon-16.png",
     "48": "assets/icon-48.png",
     "128": "assets/icon-128.png"
   },
-  "browser_action": {
+  "action": {
       "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -24,12 +23,31 @@
           "run_at": "document_end",
           "js": ["jquery.js", "inject.js"],
           "css": ["content.css"]
+      },
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "run_at": "document_end",
+        "js": ["icon.js"]
       }
   ],
-  "web_accessible_resources": [
-    "content.html", "assets/*", "popup.css", "popup.js"
-  ],
+  "web_accessible_resources": [{
+    "resources" : [
+      "content.html",
+      "assets/*",
+      "popup.css",
+      "popup.js"
+    ],
+    "matches": [
+      "https://www.netflix.com/*"
+    ],
+    "extension_ids": []
+  }],
   "permissions": [
-    "tabs", "storage", "https://www.googleapis.com/*"
+    "tabs", "storage"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/*"
   ]
 }
